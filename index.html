@@ -15,7 +15,7 @@
 
     header {
       background-color: #000000;
-      color: #ccc; /* Gris clarito para el título */
+      color: #ccc;
       padding: 1rem 2rem;
       display: flex;
       align-items: center;
@@ -24,7 +24,7 @@
     }
 
     .logo {
-      height: 150px; /* Tamaño del logo */
+      height: 150px;
     }
 
     .titulo {
@@ -32,7 +32,7 @@
       font-weight: bold;
       text-align: center;
       flex-grow: 1;
-      color: #ccc; /* Gris clarito */
+      color: #ccc;
     }
 
     main {
@@ -45,7 +45,7 @@
       background-position: center center;
       background-repeat: no-repeat;
       border-radius: 8px;
-      color: white; /* Texto blanco */
+      color: white;
     }
 
     section {
@@ -53,7 +53,7 @@
     }
 
     h2 {
-      color: #eee; /* un blanco suave para los títulos */
+      color: #eee;
     }
 
     ul {
@@ -69,7 +69,7 @@
     }
 
     a {
-      color: #66ccff; /* Azul claro para links */
+      color: #66ccff;
       text-decoration: none;
     }
 
@@ -100,6 +100,52 @@
     .whatsapp-button:hover {
       background-color: #128C7E;
     }
+
+    /* ---- Equipo ---- */
+    .equipo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    .tarjeta {
+      background-color: rgba(34, 34, 34, 0.9);
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    }
+
+    .foto-profesional {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+      border: 2px solid #66ccff;
+    }
+
+    .boton-cv {
+      display: inline-block;
+      margin-top: 0.5rem;
+      background-color: #66ccff;
+      color: #000;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton-cv:hover {
+      background-color: #3399cc;
+    }
   </style>
 </head>
 <body>
@@ -113,7 +159,6 @@
     <section>
       <h2>¿Quiénes somos?</h2>
       <p><strong>Overload</strong> es una empresa ubicada en <strong>Tanti, Córdoba</strong>, especializada en soluciones de automatización para hogares y comercios. Nos dedicamos tanto a la automatización de luminarias como a sistemas eléctricos generales, utilizando tecnologías modernas como <strong>Arduino</strong> y una amplia variedad de sensores inteligentes.</p>
-      <p>Buscamos ofrecer al cliente más <strong>comodidad, eficiencia energética y seguridad</strong> a través de sistemas personalizados y adaptados a cada necesidad. Nuestra filosofía se basa en brindar soluciones accesibles, priorizando la <strong>economía del cliente</strong> sin descuidar la calidad y la innovación.</p>
     </section>
 
     <section>
@@ -122,7 +167,7 @@
         <li><strong>Ahorro energético:</strong> sistemas que evitan consumos innecesarios mediante sensores y programación.</li>
         <li><strong>Comodidad:</strong> encendido automático de luces, control remoto de dispositivos, y más.</li>
         <li><strong>Seguridad:</strong> porteros eléctricos y sistemas de control de acceso eficientes y confiables.</li>
-        <li><strong>Eficiencia en el riego:</strong> nuestros sistemas automatizados permiten programar horarios y sensores de humedad para optimizar el uso del agua.</li>
+        <li><strong>Eficiencia en el riego:</strong> sistemas automatizados que optimizan el uso del agua.</li>
       </ul>
     </section>
 
@@ -130,16 +175,57 @@
       <h2>Servicios que ofrecemos</h2>
       <ul>
         <li>Automatización de luminarias y dispositivos eléctricos</li>
-        <li>Instalación y configuración de sistemas de riego automatizado</li>
-        <li>Instalación de porteros eléctricos y videoporteros</li>
+        <li>Instalación de sistemas de riego automatizado</li>
+        <li>Porteros eléctricos y videoporteros</li>
         <li>Proyectos personalizados con Arduino y sensores</li>
       </ul>
+    </section>
+
+    <!-- NUEVA SECCIÓN DE EQUIPO -->
+    <section>
+      <h2>Nuestro equipo profesional</h2>
+      <div class="equipo">
+        <div class="tarjeta">
+          <img src="https://via.placeholder.com/120/ff6f61/ffffff?text=M" class="foto-profesional">
+          <h3>Martina Quintana Farías</h3>
+          <p>Estudiante Técnica en Automatización</p>
+          <a href="martina.html" class="boton-cv">Ver currículum</a>
+        </div>
+
+        <div class="tarjeta">
+          <img src="https://via.placeholder.com/120/6fb1ff/ffffff?text=V" class="foto-profesional">
+          <h3>Valentina Sanders Dardanelli</h3>
+          <p>Técnica Electrónica y Asistente Contable</p>
+          <a href="valentina.html" class="boton-cv">Ver currículum</a>
+        </div>
+
+        <div class="tarjeta">
+          <img src="https://via.placeholder.com/120/ffd166/000000?text=J" class="foto-profesional">
+          <h3>Joaquín Soria</h3>
+          <p>Técnico Electrónico en Formación</p>
+          <a href="joaquin.html" class="boton-cv">Ver currículum</a>
+        </div>
+
+        <div class="tarjeta">
+          <img src="https://via.placeholder.com/120/9b59b6/ffffff?text=M" class="foto-profesional">
+          <h3>Mateo Elías Brondo</h3>
+          <p>Técnico Electricista en Formación</p>
+          <a href="mateo.html" class="boton-cv">Ver currículum</a>
+        </div>
+
+        <div class="tarjeta">
+          <img src="https://via.placeholder.com/120/00b894/ffffff?text=F" class="foto-profesional">
+          <h3>Juan Facundo Gómez Agnone</h3>
+          <p>Técnico Electrónico y Editor Audiovisual</p>
+          <a href="facundo.html" class="boton-cv">Ver currículum</a>
+        </div>
+      </div>
     </section>
 
     <section>
       <h2>Contacto</h2>
       <p>¿Querés automatizar tu hogar o comercio?</p>
-      <p>Escribinos a <a href="mailto:overloadautomatizaciones@gmail.com">overloadautomatizaciones@gmail.com</a> y contanos qué necesitás. Te asesoramos sin compromiso.</p>
+      <p>Escribinos a <a href="mailto:overloadautomatizaciones@gmail.com">overloadautomatizaciones@gmail.com</a>.</p>
     </section>
   </main>
 
@@ -147,16 +233,6 @@
     &copy; 2025 Overload Automatizaciones - Tanti, Córdoba. Todos los derechos reservados.
   </footer>
 
-  <a
-    href="https://wa.me/3541359619"
-    class="whatsapp-button"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Contactar por WhatsApp"
-    title="Contactar por WhatsApp"
-  >
-    &#128241;
-  </a>
-
+  <a href="https://wa.me/3541359619" class="whatsapp-button" target="_blank" title="Contactar por WhatsApp">&#128241;</a>
 </body>
 </html>
