@@ -37,7 +37,7 @@
 
     main {
       padding: 2rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
       line-height: 1.6;
       background-image: url('Imagen%20de%20WhatsApp%202025-06-18%20a%20las%2000.09.55_6715f299.jpg');
@@ -54,6 +54,7 @@
 
     h2 {
       color: #eee;
+      text-align: center;
     }
 
     ul {
@@ -103,17 +104,26 @@
 
     /* 💠 Estilos del equipo profesional */
     .equipo {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 2rem;
+      justify-items: center;
       margin-top: 2rem;
     }
 
     .tarjeta {
       text-align: center;
-      width: 180px;
-      transition: transform 0.3s ease;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 200px;
+      min-height: 280px;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #66ccff;
     }
 
     .foto-profesional {
@@ -138,6 +148,7 @@
       border-radius: 8px;
       text-decoration: none;
       transition: background 0.3s ease;
+      margin-top: 10px;
     }
 
     .boton-cv:hover {
@@ -238,4 +249,3 @@
 
 </body>
 </html>
-
