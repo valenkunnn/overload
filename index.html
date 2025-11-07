@@ -74,7 +74,7 @@
       text-decoration: underline;
     }
 
-    /* 📞 Botón de contacto (WhatsApp/llamada) */
+    /* 📞 Botón de contacto */
     .whatsapp-button {
       position: fixed;
       bottom: 20px;
@@ -85,7 +85,6 @@
       width: 60px;
       height: 60px;
       text-align: center;
-      font-size: 30px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.3);
       z-index: 1000;
       cursor: pointer;
@@ -98,6 +97,12 @@
     .whatsapp-button:hover {
       background-color: #99ddff;
       transform: scale(1.1);
+    }
+
+    .whatsapp-button img {
+      width: 35px;
+      height: 35px;
+      filter: brightness(0) invert(1); /* mantiene la imagen blanca si tiene fondo oscuro */
     }
 
     /* 💠 Estilos del equipo profesional */
@@ -266,7 +271,7 @@
     rel="noopener noreferrer" 
     aria-label="Contactar por teléfono" 
     title="Contactar por teléfono">
-    <img src="telefono-removebg-preview.png" alt="Teléfono" style="width:32px; height:32px;">
+    <img src="telefono-removebg-preview.png" alt="Teléfono">
   </a>
 
 </body>
